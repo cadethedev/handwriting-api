@@ -1,6 +1,11 @@
 import os
 
-BASE_PATH = "model"
+# Get the directory where this module is located
+_module_dir = os.path.dirname(os.path.abspath(__file__))
+# Model is in the parent directory of handwriting_synthesis
+_package_root = os.path.dirname(_module_dir)
+
+BASE_PATH = os.path.join(_package_root, "model")
 BASE_DATA_PATH = "data"
 
 data_path: str = os.path.join(BASE_PATH, BASE_DATA_PATH)
