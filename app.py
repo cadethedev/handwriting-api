@@ -8,9 +8,6 @@ import numpy as np
 import os
 import sys
 
-# Add handwriting-synthesis to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'handwriting-synthesis'))
-
 from handwriting_synthesis.hand import Hand
 
 app = Flask(__name__)
